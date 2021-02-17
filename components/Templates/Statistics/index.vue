@@ -1,6 +1,6 @@
 <template>
   <div :id="blok.id" class="flex flex-wrap text-center">
-    <div v-for="item in blok" :key="item._uid" :class="rowClasses">
+    <div v-for="item in blok" :key="item._uid" class="w-1/3">
       <div
         v-if="item.number"
         v-html="item.number"
