@@ -6,7 +6,7 @@
         v-html="item.number"
         class="font-medium text-4xl"
       ></div>
-      <div v-if="item.title" v-html="item.title" class="font-medium"></div>
+      <div v-if="item.title" v-html="item.title.toUpperCase()" class="font-medium"></div>
     </div>
   </div>
 </template>
