@@ -1,5 +1,5 @@
 <template>
-  <header class="absolute left-0 right-0 flex container lg:px-10 m-auto py-5">
+  <header :class="[$route.path=='/'? 'absolute left-0 right-0 flex container p-5 m-auto':'flex container p-5 m-auto bg-black']">
     <nav class="self-center">
       <ul class="flex space-x-4">
         <li v-for="(link, ind) in headerLinks" :key="ind">

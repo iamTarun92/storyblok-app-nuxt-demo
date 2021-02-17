@@ -1,5 +1,5 @@
 <template>
-  <section>
+  <section class="container m-auto px-5">
     <Article :blok="story.content" />
   </section>
 </template>

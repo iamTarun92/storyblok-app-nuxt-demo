@@ -1,10 +1,10 @@
 <template>
   <div v-editable="blok">
     <div :style="setHeroBackground()" class="h-screen flex">
-      <div class="container self-end mx-auto pb-16 lg:px-10">
+      <div class="container self-end mx-auto pb-16 px-5">
         <div class="flex justify-between">
           <div class="w-6/12 self-end">
-            <h1 class="leading-tight text-5xl text-white whitespace-pre" v-html="blok.title"></h1>
+            <h1 class="leading-tight text-5xl text-white whitespace-pre pl-10" v-html="blok.title"></h1>
           </div>
           <div class="max-w-md">
             <div class="card bg-white p-5">
