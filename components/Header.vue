@@ -140,7 +140,7 @@ export default {
     return {
       headerLinks: [
         { name: 'Home', link: '' },
-        { name: 'Blog', link: 'blog' },
+        { name: 'Blog', link: 'articles' },
       ],
     }
   },
