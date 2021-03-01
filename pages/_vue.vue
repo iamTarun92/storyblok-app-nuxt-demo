@@ -67,7 +67,7 @@ export default {
   },
   async fetch(context) {
     // Loading reference data - Articles in our case
-    if (context.store.state.articles.loaded !== '1') {
+    if (context.store.state.articles && context.store.state.articles.loaded !== '1') {
       let articlesRefRes = await context.app.$storyapi.get(`cdn/stories/`, {
         starts_with: 'articles/',
         version: 'draft',

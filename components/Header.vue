@@ -1,12 +1,11 @@
 <template>
   <header
     :class="[
-      $route.path == '/'
-        ? 'absolute left-0 right-0 flex container p-5 m-auto'
-        : 'flex container p-5 m-auto bg-white shadow',
+      $route.path == '/' ? 'absolute left-0 right-0 ' : 'bg-white shadow',
     ]"
+    class="items-center flex container p-5 m-auto"
   >
-    <nav class="self-center">
+    <nav>
       <ul class="flex space-x-4">
         <li v-for="(link, ind) in headerLinks" :key="ind">
           <nuxt-link
@@ -138,8 +137,8 @@
       type="button"
       :class="[
         $route.path == '/'
-          ? 'border-2 border-white px-5 py-2 self-center text-white hover:bg-blue-900 hover:border-transparent'
-          : 'border-2 border-black px-5 py-2 self-center text-black hover:text-white hover:bg-blue-900 hover:border-transparent',
+          ? 'border-2 border-white px-5 py-2 text-white hover:bg-blue-900 hover:border-transparent'
+          : 'border-2 border-black px-5 py-2 text-black hover:text-white hover:bg-blue-900 hover:border-transparent',
       ]"
     >
       Book Now

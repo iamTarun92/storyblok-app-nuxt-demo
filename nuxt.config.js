@@ -49,6 +49,12 @@ export default {
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {},
 
+  router: {
+    base: '/',
+    routeNameSplitter: '/',
+    middleware: ['languageDetection']
+  },
+
   // generate
   generate: {
     fallback: true

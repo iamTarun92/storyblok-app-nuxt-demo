@@ -39,6 +39,8 @@ export default {
   },
   computed: {
     variationClasses() {
+      // return this.$wind.box.base[this.blok.variation]
+
       if (this.blok.variation == 'content_left') {
         return this.$wind.box.base['content_left']
       } else {

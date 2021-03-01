@@ -6,6 +6,7 @@
       :blok="blok"
       :is="blok.component"
     />
+    <Footer :blok="$store.state.settings.mainFooter[0]" />
   </div>
 </template>
 
