@@ -1,0 +1,110 @@
+<template>
+  <div>
+    <div id="app">
+      <h2>Carousel with Vue.js</h2>
+      <div class="carousel-container">
+        <transition-group class="carousel" tag="div">
+          <div v-for="slide in slides" class="slide" :key="slide.id">
+            <h4>{{ slide.title }}</h4>
+          </div>
+        </transition-group>
+        <div class="carousel-controls">
+          <button class="carousel-controls__button" @click="previous">
+            &#60;
+          </button>
+          <button class="carousel-controls__button" @click="next">&#62;</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</template>
+
+<script>
+export default {
+  data() {
+    return {
+      slides: [
+        {
+          title: 'Slide 1',
+          id: 1,
+        },
+        {
+          title: 'Slide 2',
+          id: 2,
+        },
+        {
+          title: 'Slide 3',
+          id: 3,
+        },
+        {
+          title: 'Slide 4',
+          id: 4,
+        },
+        {
+          title: 'Slide 5',
+          id: 5,
+        },
+      ],
+    }
+  },
+  methods: {
+    next() {
+      const first = this.slides.shift()
+      this.slides = this.slides.concat(first)
+    },
+    previous() {
+      const last = this.slides.pop()
+      this.slides = [last].concat(this.slides)
+    },
+  },
+}
+</script>
+
+<style scoped>
+body {
+  background: #20262e;
+  padding: 20px;
+  font-family: Helvetica;
+}
+
+h2 {
+  font-size: 24px;
+}
+
+#app {
+  background: #fff;
+  border-radius: 4px;
+  padding: 20px;
+  transition: all 0.2s;
+  text-align: center;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.carousel {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.slide {
+  flex: 0 0 100%;
+  display: flex;
+  justify-content: center;
+  padding: 50px 0;
+  transition: all 0.3s;
+  background: #ddd;
+  margin: 20px 0;
+}
+
+.carousel-controls__button {
+  cursor: pointer;
+  background: tomato;
+  border: 0;
+  color: #fff;
+  border-radius: 3px;
+  padding: 5px 10px;
+  font-size: 18px;
+}
+</style>

@@ -13,6 +13,7 @@ import RichText_ContentBottom from '~/components/Modules/TitleBlock'
 import Teaser from '~/components/Modules/Teaser'
 import Btn from '~/components/Elements/Btn'
 import FeaturedIn from '~/components/Modules/FeaturedIn'
+import Slider from '~/components/Elements/Slider'
 
 Vue.component('page', Page)
 Vue.component('RichText_Content', RichTextContent)
@@ -26,3 +27,4 @@ Vue.component('featured-articles', FeaturedArticles)
 Vue.component('article-teaser', ArticleTeaser)
 Vue.component('RichText_DoubleBlock', RichTextDoubleBlocks)
 Vue.component('FeaturedIn', FeaturedIn)
+Vue.component('Slider', Slider)
