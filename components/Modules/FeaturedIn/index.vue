@@ -6,14 +6,64 @@
       </h1>
       <div class="mt-10 space-x-2">
         <div class="carousel-controls flex justify-end space-x-1.5 mb-10">
-          <button @click="prevArrow(getCarouselDomID())" class="rounded-full h-12 w-12 flex items-center justify-center bg-black text-white">
-            <span>prev</span>
+          <button
+            @click="prevArrow(getCarouselDomID())"
+            class="transform rotate-180 border-4 border-black flex h-12 items-center justify-center p-3 rounded-full w-12"
+          >
+            <span
+              ><svg
+                viewBox="0 0 16 16"
+                width="1em"
+                height="1em"
+                focusable="false"
+                role="img"
+                aria-label="play circle"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="currentColor"
+                class="bi-play-circle prev b-icon bi"
+              >
+                <g transform="translate(8 8) scale(2 2) translate(-8 -8)">
+                  <path
+                    d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"
+                  ></path>
+                  <path
+                    d="M6.271 5.055a.5.5 0 0 1 .52.038l3.5 2.5a.5.5 0 0 1 0 .814l-3.5 2.5A.5.5 0 0 1 6 10.5v-5a.5.5 0 0 1 .271-.445z"
+                  ></path>
+                </g></svg
+            ></span>
           </button>
-          <button @click="nextArrow(getCarouselDomID())" class="rounded-full h-12 w-12 flex items-center justify-center bg-black text-white">
-            <span>next</span>
+          <button
+            @click="nextArrow(getCarouselDomID())"
+            class="border-4 border-black flex h-12 items-center justify-center p-3 rounded-full w-12"
+          >
+            <span
+              ><svg
+                viewBox="0 0 16 16"
+                width="1em"
+                height="1em"
+                focusable="false"
+                role="img"
+                aria-label="play circle"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="currentColor"
+                class="bi-play-circle prev b-icon bi"
+              >
+                <g transform="translate(8 8) scale(2 2) translate(-8 -8)">
+                  <path
+                    d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"
+                  ></path>
+                  <path
+                    d="M6.271 5.055a.5.5 0 0 1 .52.038l3.5 2.5a.5.5 0 0 1 0 .814l-3.5 2.5A.5.5 0 0 1 6 10.5v-5a.5.5 0 0 1 .271-.445z"
+                  ></path>
+                </g></svg
+            ></span>
           </button>
         </div>
-        <VueSlickCarousel v-bind="settings" :ref="getCarouselDomID()" class="pl-20">
+        <VueSlickCarousel
+          v-bind="settings"
+          :ref="getCarouselDomID()"
+          class="pl-20"
+        >
           <div v-for="(item, ind) in blok.items" :key="ind" class="pr-5">
             <div class="featured">
               <div class="featured-inner">

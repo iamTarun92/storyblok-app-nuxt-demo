@@ -1,7 +1,8 @@
 <template>
   <div>
-    <Header />
+    <Header :blok="$store.state.settings.mainHeader"/>
     <Nuxt />
+    <Footer :blok="$store.state.settings.mainFooter[0]" />
   </div>
 </template>
 
