@@ -1,24 +1,35 @@
 <template>
   <div
-    class="py-24"
+    class="py-12 md:py-24"
     v-editable="blok"
-    style="background:linear-gradient(to right, #FFF 0%, #FFF 30%, #F5F4F2 30%, #F5F4F2 100%)"
+    style="
+      background: linear-gradient(
+        to right,
+        #fff 0%,
+        #fff 30%,
+        #f5f4f2 30%,
+        #f5f4f2 100%
+      );
+    "
   >
-    <div
-      class="flex h-screen relative max-w-screen-lg mx-auto"
-      :style="{
-        'background-image': 'url(' + blok.image.filename + ')',
-        'background-size': 'cover',
-      }"
-    >
-      <div class="max-w-md bg-white p-16 self-end" :class="variationClasses">
-        <h2 v-if="blok.title" v-html="blok.title" class="text-2xl"></h2>
-        <div v-if="blok.content" v-html="blok.content" class="mt-2"></div>
-        <Btn
-          :blok="blok.blocks[0]"
-          v-if="blok.blocks && blok.blocks.length"
-          class="inline-block mt-4"
-        />
+    <div class="container">
+      <div
+        class="flex pt-60 md:pt-0 md:h-screen relative"
+        :style="{
+          'background-image': 'url(' + blok.image.filename + ')',
+          'background-size': 'cover',
+          'background-position': 'right'
+        }"
+      >
+        <div class="md:max-w-md bg-gray-100 md:bg-white p-7 sm:p-16 self-end" :class="variationClasses">
+          <h2 v-if="blok.title" v-html="blok.title" class="text-2xl"></h2>
+          <div v-if="blok.content" v-html="blok.content" class="mt-2"></div>
+          <Btn
+            :blok="blok.blocks[0]"
+            v-if="blok.blocks && blok.blocks.length"
+            class="inline-block mt-4"
+          />
+        </div>
       </div>
     </div>
   </div>

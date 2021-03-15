@@ -1,8 +1,8 @@
 <template>
   <div :id="blok.id || blok._uid">
     <div :style="setHeroBackground()" class="h-64"></div>
-    <div class="-mt-20 m-auto w-9/12">
-      <div class="bg-white p-20 flex flex-col space-y-8 text-center">
+    <div class="-mt-20 container">
+      <div class="bg-white p-10 md:p-20 flex flex-col space-y-8 text-center">
         <h1
           v-if="blok.title"
           v-html="blok.title"

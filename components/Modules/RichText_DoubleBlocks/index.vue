@@ -1,7 +1,7 @@
 <template>
   <div>
     <div class="-mt-20 m-auto w-9/12 py-20">
-      <div class="flex space-x-8">
+      <div class="md:flex md:space-x-8">
         <div class="max-w-lg">
           <div
             v-if="blok.image1 && blok.image1.filename"

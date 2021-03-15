@@ -1,11 +1,11 @@
 <template>
   <div :id="blok.id || blok._uid">
-    <div class="container m-auto my-10 py-20 lg:px-10">
+    <div class="container m-auto md:my-10 py-10 md:py-20 lg:px-10">
       <h1 class="text-4xl relative mb-5 font-medium tracking-wide">
         {{ blok.title.toUpperCase() }}
       </h1>
       <div class="mt-10 space-x-2">
-        <div class="carousel-controls flex justify-end space-x-1.5 mb-10">
+        <div class="carousel-controls flex md:justify-end space-x-1.5 mb-10">
           <button
             @click="prevArrow(getCarouselDomID())"
             class="transform rotate-180 border-4 border-black flex h-12 items-center justify-center p-3 rounded-full w-12"
@@ -62,7 +62,7 @@
         <VueSlickCarousel
           v-bind="settings"
           :ref="getCarouselDomID()"
-          class="pl-20"
+          class="md:pl-20"
         >
           <div v-for="(item, ind) in blok.items" :key="ind" class="pr-5">
             <div class="featured">

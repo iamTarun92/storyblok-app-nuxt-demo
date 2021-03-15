@@ -2,7 +2,7 @@
   <div v-editable="blok">
     <header
       :class="{ 'hidden-navbar': !showNavbar, 'bg-white': backcolor }"
-      class="fixed top-0 left-0 right-0 z-10 items-center flex p-5 m-auto text-white transition-all duration-200"
+      class="container fixed top-0 left-0 right-0 z-10 py-5 items-center flex text-white transition-all duration-200"
     >
       <button
         class="flex items-center"

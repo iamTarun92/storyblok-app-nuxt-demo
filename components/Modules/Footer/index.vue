@@ -1,5 +1,5 @@
 <template>
-  <footer class="py-28 text-white" :class="name">
+  <footer class="py-10 md:py-28 text-white" :class="name">
     <div class="container mx-auto lg:px-10">
       <div class="footer-row-first lg:flex flex-wrap">
         <div class="item flex-1">
