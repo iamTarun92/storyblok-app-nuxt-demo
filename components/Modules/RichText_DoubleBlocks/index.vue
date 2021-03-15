@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="-mt-20 m-auto w-9/12 py-20">
+    <div class="m-auto w-9/12 py-10">
       <div class="md:flex md:space-x-8">
         <div class="max-w-lg">
           <div
@@ -24,7 +24,7 @@
           </div>
         </div>
 
-        <div class="mt-20 flex flex-col">
+        <div class="mt-5 sm:mt-20 flex flex-col">
           <div
             v-if="blok.image2 && blok.image2.filename"
             :style="{

@@ -1,13 +1,13 @@
 <template>
   <footer class="py-10 md:py-28 text-white" :class="name">
     <div class="container mx-auto lg:px-10">
-      <div class="footer-row-first lg:flex flex-wrap">
-        <div class="item flex-1">
+      <div class="footer-row-first sm:flex flex-wrap">
+        <div class="item w-11/12 lg:w-1/4 lg:mb-0 mb-5">
           <a v-if="blok.homeImage">
             <img :src="blok.homeImage.filename" />
           </a>
         </div>
-        <div class="item flex-1">
+        <div class="item w-1/3 lg:w-1/4">
           <div
             v-if="blok.copyrightNavItems"
             v-for="(itemList, index) in blok.copyrightNavItems"
@@ -20,10 +20,10 @@
             </div>
           </div>
         </div>
-        <div class="item whitespace-pre-line flex-1 text-white">
+        <div class="item w-1/3 lg:w-1/4 whitespace-pre-line text-white">
           {{ blok.disclaimer[0].content }}
         </div>
-        <div class="item flex-1">
+        <div class="item w-1/3 lg:w-1/4">
           <ul v-if="blok.socialLinks">
             <li v-for="(link, index) in blok.socialLinks" :key="index">
               <a :href="link.url" target="_blank" class="text-white">

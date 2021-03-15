@@ -6,7 +6,7 @@
         <h1
           v-if="blok.title"
           v-html="blok.title"
-          class="uppercase font-medium text-3xl text-center"
+          class="whitespace-pre font-medium text-3xl text-center mb-10 sm:mb-0"
         ></h1>
         <Statistics
           v-if="blok.statistics && blok.statistics.length"

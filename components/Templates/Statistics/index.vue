@@ -1,12 +1,12 @@
 <template>
-  <div :id="blok.id" class="md:flex flex-wrap text-center space-y-4">
-    <div v-for="item in blok" :key="item._uid" class="w-1/3 m-auto">
+  <div :id="blok.id" class="md:flex flex-wrap text-center space-y-8">
+    <div v-for="item in blok" :key="item._uid" class="w-1/3 m-auto space-y-2">
       <div
         v-if="item.number"
         v-html="item.number"
         class="font-medium text-4xl"
       ></div>
-      <div v-if="item.title" v-html="item.title.toUpperCase()" class="font-medium"></div>
+      <div v-if="item.title" v-html="item.title.toUpperCase()" class=" tracking-widest"></div>
     </div>
   </div>
 </template>

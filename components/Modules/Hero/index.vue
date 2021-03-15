@@ -1,9 +1,9 @@
 <template>
   <div v-editable="blok">
-    <div :style="setHeroBackground()" class="h-screen flex">
+    <div :style="setHeroBackground()" class="pt-60 sm:pt-0 sm:h-screen flex">
       <div class="container self-end mx-auto pb-16 px-5">
         <h1
-          class="leading-tight text-3xl sm:text-5xl text-white whitespace-pre pl-10"
+          class=" whitespace-pre text-4xl sm:text-5xl text-white sm:pl-10"
           v-html="blok.title"
         ></h1>
 
