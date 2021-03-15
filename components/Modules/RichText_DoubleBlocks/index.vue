@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="m-auto w-9/12 py-10">
+    <div class="container py-10">
       <div class="md:flex md:space-x-8">
         <div class="max-w-lg">
           <div

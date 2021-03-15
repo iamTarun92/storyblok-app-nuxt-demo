@@ -7,7 +7,7 @@
             <img :src="blok.homeImage.filename" />
           </a>
         </div>
-        <div class="item w-1/3 lg:w-1/4">
+        <div class="item sm:w-1/3 lg:w-1/4">
           <div
             v-if="blok.copyrightNavItems"
             v-for="(itemList, index) in blok.copyrightNavItems"
@@ -20,10 +20,10 @@
             </div>
           </div>
         </div>
-        <div class="item w-1/3 lg:w-1/4 whitespace-pre-line text-white">
+        <div class="item sm:w-1/3 lg:w-1/4 whitespace-pre-line text-white">
           {{ blok.disclaimer[0].content }}
         </div>
-        <div class="item w-1/3 lg:w-1/4">
+        <div class="item sm:w-1/3 lg:w-1/4">
           <ul v-if="blok.socialLinks">
             <li v-for="(link, index) in blok.socialLinks" :key="index">
               <a :href="link.url" target="_blank" class="text-white">

@@ -2,7 +2,7 @@
   <div v-editable="blok">
     <header
       :class="{ 'hidden-navbar': !showNavbar, 'bg-white': backcolor }"
-      class="fixed top-0 left-0 right-0 z-10 p-5 items-center flex text-white transition-all duration-200"
+      class="fixed top-0 left-0 right-0 z-10 p-5 items-center flex justify-between text-white transition-all duration-200"
     >
       <button
         class="flex items-center"
@@ -22,7 +22,7 @@
         </svg>
         MENU
       </button>
-      <div class="flex-1">
+      <div class=" hidden sm:block sm:flex-1">
         <a
           v-if="blok[0].homeImage2 && blok[0].homeImage2.filename"
           v-show="backcolor == false"

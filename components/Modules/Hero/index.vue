@@ -3,7 +3,7 @@
     <div :style="setHeroBackground()" class="pt-60 sm:pt-0 sm:h-screen flex">
       <div class="container self-end mx-auto pb-16 px-5">
         <h1
-          class=" whitespace-pre text-4xl sm:text-5xl text-white sm:pl-10"
+          class=" break-all sm:whitespace-pre text-4xl sm:text-5xl text-white sm:pl-10"
           v-html="blok.title"
         ></h1>
 
